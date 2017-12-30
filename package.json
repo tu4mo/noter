@@ -1,0 +1,16 @@
+{
+  "name": "Noter",
+  "version": "1.0.0",
+  "description": "A minimal note app for Mac's menu bar",
+  "main": "main.js",
+  "scripts": {
+    "start": "electron ."
+  },
+  "repository": "https://github.com/tu4mo/noter",
+  "author": "tu4mo",
+  "license": "ISC",
+  "devDependencies": {
+    "electron": "~1.7.8"
+  },
+  "dependencies": {}
+}
