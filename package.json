@@ -5,6 +5,7 @@
   "main": "main.js",
   "scripts": {
     "format": "prettier --write *.js",
+    "lint": "eslint .",
     "start": "electron ."
   },
   "repository": "https://github.com/tu4mo/noter",
@@ -12,6 +13,12 @@
   "license": "ISC",
   "devDependencies": {
     "electron": "~1.7.8",
+    "eslint": "^4.14.0",
+    "eslint-config-standard": "^11.0.0-beta.0",
+    "eslint-plugin-import": "^2.8.0",
+    "eslint-plugin-node": "^5.2.1",
+    "eslint-plugin-promise": "^3.6.0",
+    "eslint-plugin-standard": "^3.0.1",
     "prettier": "^1.9.2"
   },
   "dependencies": {}
