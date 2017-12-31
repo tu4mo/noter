@@ -4,13 +4,15 @@
   "description": "A minimal note app for Mac's menu bar",
   "main": "main.js",
   "scripts": {
+    "format": "prettier --write *.js",
     "start": "electron ."
   },
   "repository": "https://github.com/tu4mo/noter",
   "author": "tu4mo",
   "license": "ISC",
   "devDependencies": {
-    "electron": "~1.7.8"
+    "electron": "~1.7.8",
+    "prettier": "^1.9.2"
   },
   "dependencies": {}
 }
