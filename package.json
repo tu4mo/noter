@@ -2,9 +2,9 @@
   "name": "Noter",
   "version": "1.0.0",
   "description": "A minimal note app for Mac's menu bar",
-  "main": "main.js",
+  "main": "app/main.js",
   "scripts": {
-    "format": "prettier --write *.js",
+    "format": "prettier --write {,**/}*.{css,js}",
     "lint": "eslint .",
     "start": "electron ."
   },
