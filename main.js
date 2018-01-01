@@ -27,11 +27,12 @@ const createNoteWindow = () => {
   noteWindow = new BrowserWindow({
     alwaysOnTop: true,
     backgroundColor: '#ffffff',
+    frame: false,
     height: 300,
     minimizable: false,
     minWidth: 200,
-    frame: false,
     maximizable: false,
+    show: false,
     width: 300
   })
 
@@ -42,6 +43,10 @@ const createNoteWindow = () => {
       slashes: true
     })
   )
+
+  noteWindow.once('ready-to-show', () => {
+    noteWindow.show()
+  })
 
   const contextMenu = new Menu()
   contextMenu.append(new MenuItem({ role: 'cut' }))
