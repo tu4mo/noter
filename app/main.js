@@ -33,6 +33,9 @@ const createNoteWindow = () => {
     minWidth: 200,
     maximizable: false,
     show: false,
+    webPreferences: {
+      scrollBounce: true
+    },
     width: 300
   })
 
