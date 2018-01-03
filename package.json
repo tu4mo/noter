@@ -6,7 +6,9 @@
   "scripts": {
     "format": "prettier --write {,**/}*.{css,js}",
     "lint": "eslint .",
-    "start": "electron ."
+    "start": "electron .",
+    "pack": "electron-builder --dir",
+    "dist": "electron-builder"
   },
   "repository": "https://github.com/tu4mo/noter",
   "author": "tu4mo",
@@ -17,6 +19,7 @@
   },
   "devDependencies": {
     "electron": "~1.7.8",
+    "electron-builder": "^19.51.0",
     "eslint": "^4.14.0",
     "eslint-config-prettier": "^2.9.0",
     "eslint-config-standard": "^11.0.0-beta.0",
@@ -26,4 +29,11 @@
     "eslint-plugin-standard": "^3.0.1",
     "prettier": "^1.9.2"
   },
+  "build": {
+    "appId": "design.bl4ck.noter",
+    "mac": {
+      "category": "public.app-category.productivity",
+      "target": "mas"
+    }
+  }
 }

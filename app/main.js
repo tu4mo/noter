@@ -66,7 +66,7 @@ const createNoteWindow = () => {
 app.dock.hide()
 
 app.on('ready', () => {
-  appIcon = new Tray('icon/iconTemplate.png')
+  appIcon = new Tray(path.join(__dirname, '..', 'icon', 'iconTemplate.png'))
   appIcon.on('click', toggleNoteWindow)
 })
 
