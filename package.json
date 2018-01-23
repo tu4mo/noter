@@ -18,22 +18,21 @@
     "lodash.debounce": "^4.0.8"
   },
   "devDependencies": {
-    "electron": "~1.7.8",
-    "electron-builder": "^19.51.0",
-    "eslint": "^4.14.0",
+    "electron": "^1.7.11",
+    "electron-builder": "^19.55.2",
+    "eslint": "^4.16.0",
     "eslint-config-prettier": "^2.9.0",
     "eslint-config-standard": "^11.0.0-beta.0",
     "eslint-plugin-import": "^2.8.0",
     "eslint-plugin-node": "^5.2.1",
     "eslint-plugin-promise": "^3.6.0",
     "eslint-plugin-standard": "^3.0.1",
-    "prettier": "^1.9.2"
+    "prettier": "^1.10.2"
   },
   "build": {
     "appId": "design.bl4ck.noter",
     "mac": {
-      "category": "public.app-category.productivity",
-      "target": "mas"
+      "category": "public.app-category.productivity"
     }
   }
 }
