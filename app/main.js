@@ -34,6 +34,7 @@ const createNoteWindow = () => {
     maximizable: false,
     show: false,
     webPreferences: {
+      nodeIntegration: true,
       scrollBounce: true
     },
     width: 300

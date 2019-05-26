@@ -3,6 +3,7 @@
   "version": "1.0.0",
   "description": "A minimal note app for Mac's menu bar",
   "main": "app/main.js",
+  "private": true,
   "scripts": {
     "format": "prettier --write '**/*.{css,js}'",
     "lint": "eslint .",
@@ -14,20 +15,20 @@
   "author": "tu4mo",
   "license": "ISC",
   "dependencies": {
-    "electron-store": "^3.1.0",
+    "electron-store": "^3.2.0",
     "lodash.debounce": "^4.0.8"
   },
   "devDependencies": {
-    "electron": "^4.1.4",
-    "electron-builder": "^20.39.0",
+    "electron": "^5.0.2",
+    "electron-builder": "^20.41.0",
     "eslint": "^5.16.0",
-    "eslint-config-prettier": "^4.1.0",
+    "eslint-config-prettier": "^4.3.0",
     "eslint-config-standard": "^12.0.0",
-    "eslint-plugin-import": "^2.16.0",
-    "eslint-plugin-node": "^8.0.1",
+    "eslint-plugin-import": "^2.17.3",
+    "eslint-plugin-node": "^9.1.0",
     "eslint-plugin-promise": "^4.1.1",
     "eslint-plugin-standard": "^4.0.0",
-    "prettier": "^1.16.4"
+    "prettier": "^1.17.1"
   },
   "build": {
     "appId": "design.bl4ck.noter",
