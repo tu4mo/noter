@@ -12,14 +12,11 @@ const toggleNoteWindow = () => {
   if (noteWindow) {
     if (noteWindow.isVisible()) {
       noteWindow.hide()
-      appIcon.setHighlightMode('never')
     } else {
       noteWindow.show()
-      appIcon.setHighlightMode('always')
     }
   } else {
     createNoteWindow()
-    appIcon.setHighlightMode('always')
   }
 }
 
