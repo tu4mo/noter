@@ -1,6 +1,5 @@
 const electron = require('electron')
 const path = require('path')
-const url = require('url')
 
 const { app, Menu, MenuItem, Tray } = electron
 const BrowserWindow = electron.BrowserWindow
@@ -31,19 +30,13 @@ const createNoteWindow = () => {
     maximizable: false,
     show: false,
     webPreferences: {
-      nodeIntegration: true,
+      preload: path.join(__dirname, 'preload.js'),
       scrollBounce: true
     },
     width: 300
   })
 
-  noteWindow.loadURL(
-    url.format({
-      pathname: path.join(__dirname, 'index.html'),
-      protocol: 'file:',
-      slashes: true
-    })
-  )
+  noteWindow.loadFile(path.join(__dirname, 'index.html'))
 
   noteWindow.once('ready-to-show', () => {
     noteWindow.show()
@@ -63,7 +56,7 @@ const createNoteWindow = () => {
 
 app.dock.hide()
 
-app.on('ready', () => {
+app.whenReady().then(() => {
   appIcon = new Tray(path.join(__dirname, '..', 'icon', 'iconTemplate.png'))
   appIcon.on('click', toggleNoteWindow)
 })
