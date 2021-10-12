@@ -19,7 +19,7 @@
     "lodash.debounce": "^4.0.8"
   },
   "devDependencies": {
-    "electron": "^13.1.8",
+    "electron": "^13.3.0",
     "electron-builder": "^21.2.0",
     "eslint": "^7.5.0",
     "eslint-config-prettier": "^6.11.0",
