@@ -22,13 +22,12 @@ const toggleNoteWindow = () => {
 const createNoteWindow = () => {
   noteWindow = new BrowserWindow({
     alwaysOnTop: true,
-    backgroundColor: '#ffffff',
+    backgroundColor: '#eee',
     frame: false,
     height: 300,
     minimizable: false,
     minWidth: 200,
     maximizable: false,
-    show: false,
     webPreferences: {
       preload: path.join(__dirname, 'preload.js'),
       scrollBounce: true
@@ -37,10 +36,6 @@ const createNoteWindow = () => {
   })
 
   noteWindow.loadFile(path.join(__dirname, 'index.html'))
-
-  noteWindow.once('ready-to-show', () => {
-    noteWindow.show()
-  })
 
   const contextMenu = new Menu()
   contextMenu.append(new MenuItem({ role: 'cut' }))
