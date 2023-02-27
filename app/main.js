@@ -29,6 +29,7 @@ const createNoteWindow = () => {
     minWidth: 200,
     maximizable: false,
     webPreferences: {
+      nodeIntegration: true,
       preload: path.join(__dirname, 'preload.js'),
       scrollBounce: true
     },
