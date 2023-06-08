@@ -1,5 +1,8 @@
 const electron = require('electron')
 const path = require('path')
+const Store = require('electron-store')
+
+Store.initRenderer()
 
 const { app, Menu, MenuItem, Tray } = electron
 const BrowserWindow = electron.BrowserWindow
