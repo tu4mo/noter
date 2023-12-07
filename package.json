@@ -7,9 +7,9 @@
   "scripts": {
     "format": "prettier --write '**/*.{css,js}'",
     "lint": "eslint .",
-    "start": "electron .",
-    "pack": "electron-builder --dir",
-    "dist": "electron-builder"
+    "start": "electron-forge start",
+    "package": "electron-forge package",
+    "make": "electron-forge make"
   },
   "type": "module",
   "repository": "https://github.com/tu4mo/noter",
@@ -20,8 +20,10 @@
     "lodash.debounce": "^4.0.8"
   },
   "devDependencies": {
+    "@electron-forge/cli": "^7.2.0",
+    "@electron-forge/maker-zip": "^7.2.0",
+    "@electron-forge/plugin-auto-unpack-natives": "^7.2.0",
     "electron": "^28.0.0",
-    "electron-builder": "^21.2.0",
     "eslint": "^7.32.0",
     "eslint-config-prettier": "^6.15.0",
     "eslint-config-standard": "^14.1.1",
