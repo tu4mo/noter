@@ -1,5 +1,5 @@
-const Store = require('electron-store')
-const debounce = require('lodash.debounce')
+import Store from 'electron-store'
+import debounce from 'lodash.debounce'
 
 const store = new Store()
 

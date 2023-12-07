@@ -1,6 +1,10 @@
-const electron = require('electron')
-const path = require('path')
-const Store = require('electron-store')
+import electron from 'electron'
+import path from 'path'
+import Store from 'electron-store'
+import { fileURLToPath } from 'url'
+
+const __filename = fileURLToPath(import.meta.url)
+const __dirname = path.dirname(__filename)
 
 Store.initRenderer()
 
@@ -33,7 +37,7 @@ const createNoteWindow = () => {
     maximizable: false,
     webPreferences: {
       nodeIntegration: true,
-      preload: path.join(__dirname, 'preload.js'),
+      preload: path.join(__dirname, 'preload.mjs'),
       scrollBounce: true
     },
     width: 300
