@@ -31,7 +31,7 @@
     "eslint-plugin-node": "^11.1.0",
     "eslint-plugin-promise": "^4.3.1",
     "eslint-plugin-standard": "^4.1.0",
-    "prettier": "^3.0.3"
+    "prettier": "^3.2.5"
   },
   "build": {
     "appId": "com.tu4mo.noter",
