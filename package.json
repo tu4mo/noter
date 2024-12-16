@@ -7,9 +7,9 @@
   "scripts": {
     "format": "prettier --write '**/*.{css,js}'",
     "lint": "eslint .",
-    "start": "electron-forge start",
+    "make": "electron-forge make",
     "package": "electron-forge package",
-    "make": "electron-forge make"
+    "start": "electron-forge start"
   },
   "type": "module",
   "repository": "https://github.com/tu4mo/noter",
@@ -23,14 +23,11 @@
     "@electron-forge/cli": "^7.5.0",
     "@electron-forge/maker-zip": "^7.5.0",
     "@electron-forge/plugin-auto-unpack-natives": "^7.5.0",
+    "@eslint/js": "^9.17.0",
     "electron": "^31.6.0",
-    "eslint": "^7.32.0",
-    "eslint-config-prettier": "^6.15.0",
-    "eslint-config-standard": "^14.1.1",
-    "eslint-plugin-import": "^2.26.0",
-    "eslint-plugin-node": "^11.1.0",
-    "eslint-plugin-promise": "^4.3.1",
-    "eslint-plugin-standard": "^4.1.0",
+    "eslint": "^9.17.0",
+    "eslint-config-prettier": "^9.1.0",
+    "globals": "^15.13.0",
     "prettier": "^3.2.5"
   },
   "build": {
