@@ -16,7 +16,7 @@
   "author": "tu4mo",
   "license": "ISC",
   "dependencies": {
-    "electron-store": "^10.0.1",
+    "electron-store": "^10.1.0",
     "lodash.debounce": "^4.0.8"
   },
   "devDependencies": {
