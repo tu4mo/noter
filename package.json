@@ -23,7 +23,7 @@
     "@electron-forge/cli": "^7.5.0",
     "@electron-forge/maker-zip": "^7.5.0",
     "@electron-forge/plugin-auto-unpack-natives": "^7.5.0",
-    "@eslint/js": "^9.27.0",
+    "@eslint/js": "^9.33.0",
     "electron": "^37.2.3",
     "eslint": "^9.29.0",
     "eslint-config-prettier": "^10.1.8",
