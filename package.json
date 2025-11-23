@@ -23,9 +23,9 @@
     "@electron-forge/cli": "7.10.2",
     "@electron-forge/maker-zip": "7.10.2",
     "@electron-forge/plugin-auto-unpack-natives": "7.10.2",
-    "@eslint/js": "9.39.0",
+    "@eslint/js": "9.39.1",
     "electron": "39.2.3",
-    "eslint": "9.36.0",
+    "eslint": "9.39.1",
     "eslint-config-prettier": "10.1.8",
     "globals": "16.5.0",
     "prettier": "3.6.2"
