@@ -10,3 +10,6 @@ updates:
         patterns:
           - 'eslint*'
           - '@eslint/*'
+      electron-forge:
+        patterns:
+          - '@electron-forge/*'
