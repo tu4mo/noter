@@ -5,3 +5,8 @@ updates:
     open-pull-requests-limit: 10
     schedule:
       interval: 'weekly'
+    groups:
+      eslint:
+        patterns:
+          - 'eslint*'
+          - '@eslint/*'
