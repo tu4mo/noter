@@ -20,15 +20,15 @@
     "lodash.debounce": "4.0.8"
   },
   "devDependencies": {
-    "@electron-forge/cli": "7.10.2",
-    "@electron-forge/maker-zip": "7.10.2",
-    "@electron-forge/plugin-auto-unpack-natives": "7.10.2",
+    "@electron-forge/cli": "7.11.1",
+    "@electron-forge/maker-zip": "7.11.1",
+    "@electron-forge/plugin-auto-unpack-natives": "7.11.1",
     "@eslint/js": "9.39.2",
-    "electron": "39.2.7",
+    "electron": "40.0.0",
     "eslint": "9.39.2",
     "eslint-config-prettier": "10.1.8",
     "globals": "17.0.0",
-    "prettier": "3.7.4"
+    "prettier": "3.8.0"
   },
   "build": {
     "appId": "com.tu4mo.noter",
