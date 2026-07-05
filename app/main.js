@@ -1,12 +1,10 @@
-import electron from 'electron'
 import path from 'path'
 import { fileURLToPath } from 'url'
 
+import { app, Menu, MenuItem, Tray, BrowserWindow } from 'electron'
+
 const __filename = fileURLToPath(import.meta.url)
 const __dirname = path.dirname(__filename)
-
-const { app, Menu, MenuItem, Tray } = electron
-const BrowserWindow = electron.BrowserWindow
 
 let appIcon = null
 let noteWindow = null
@@ -33,7 +31,6 @@ const createNoteWindow = () => {
     minWidth: 200,
     maximizable: false,
     webPreferences: {
-      nodeIntegration: true,
       preload: path.join(__dirname, 'preload.mjs'),
       scrollBounce: true
     },

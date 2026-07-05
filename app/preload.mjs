@@ -1,4 +1,10 @@
-import debounce from 'lodash.debounce'
+function debounce(fn, wait) {
+  let timeout
+  return (...args) => {
+    clearTimeout(timeout)
+    timeout = setTimeout(() => fn(...args), wait)
+  }
+}
 
 window.addEventListener('DOMContentLoaded', () => {
   const editor = document.getElementById('editor')
@@ -11,5 +17,5 @@ window.addEventListener('DOMContentLoaded', () => {
     localStorage.setItem('note', editor.innerText)
   }
 
-  editor.addEventListener('input', debounce(saveNote, 1000))
+  editor.addEventListener('input', debounce(saveNote, 500))
 })
