@@ -47,7 +47,7 @@ const createNoteWindow = () => {
   contextMenu.append(new MenuItem({ label: 'Quit', role: 'quit' }))
 
   noteWindow.webContents.on('context-menu', (e, params) => {
-    contextMenu.popup(noteWindow, params.x, params.y)
+    contextMenu.popup({ window: noteWindow, x: params.x, y: params.y })
   })
 }
 
