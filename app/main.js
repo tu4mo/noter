@@ -26,11 +26,14 @@ const createNoteWindow = () => {
     minimizable: false,
     minWidth: 200,
     maximizable: false,
+    show: false,
     webPreferences: {
       scrollBounce: true
     },
     width: 300
   })
+
+  noteWindow.once('ready-to-show', () => noteWindow.show())
 
   noteWindow.loadFile(path.join(import.meta.dirname, 'index.html'))
 
