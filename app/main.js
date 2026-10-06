@@ -53,7 +53,7 @@ app.dock.hide()
 
 app.whenReady().then(() => {
   appIcon = new Tray(
-    path.join(import.meta.dirname, '..', 'icon', 'iconTemplate.png')
+    path.join(import.meta.dirname, '..', 'icon', 'iconTemplate@2x.png')
   )
   appIcon.on('click', toggleNoteWindow)
 })
