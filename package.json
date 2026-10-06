@@ -25,11 +25,5 @@
     "eslint-config-prettier": "10.1.8",
     "globals": "17.6.0",
     "oxfmt": "0.72.0"
-  },
-  "build": {
-    "appId": "com.tu4mo.noter",
-    "mac": {
-      "category": "public.app-category.productivity"
-    }
   }
 }
