@@ -27,7 +27,6 @@ const createNoteWindow = () => {
     minWidth: 200,
     maximizable: false,
     webPreferences: {
-      preload: path.join(import.meta.dirname, 'preload.mjs'),
       scrollBounce: true
     },
     width: 300
