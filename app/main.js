@@ -1,10 +1,6 @@
 import path from 'path'
-import { fileURLToPath } from 'url'
 
 import { app, Menu, MenuItem, Tray, BrowserWindow } from 'electron'
-
-const __filename = fileURLToPath(import.meta.url)
-const __dirname = path.dirname(__filename)
 
 let appIcon = null
 let noteWindow = null
@@ -31,13 +27,13 @@ const createNoteWindow = () => {
     minWidth: 200,
     maximizable: false,
     webPreferences: {
-      preload: path.join(__dirname, 'preload.mjs'),
+      preload: path.join(import.meta.dirname, 'preload.mjs'),
       scrollBounce: true
     },
     width: 300
   })
 
-  noteWindow.loadFile(path.join(__dirname, 'index.html'))
+  noteWindow.loadFile(path.join(import.meta.dirname, 'index.html'))
 
   const contextMenu = new Menu()
   contextMenu.append(new MenuItem({ role: 'cut' }))
@@ -54,7 +50,9 @@ const createNoteWindow = () => {
 app.dock.hide()
 
 app.whenReady().then(() => {
-  appIcon = new Tray(path.join(__dirname, '..', 'icon', 'iconTemplate.png'))
+  appIcon = new Tray(
+    path.join(import.meta.dirname, '..', 'icon', 'iconTemplate.png')
+  )
   appIcon.on('click', toggleNoteWindow)
 })
 
