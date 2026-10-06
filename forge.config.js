@@ -10,11 +10,5 @@ export default {
       name: '@electron-forge/maker-zip',
       platforms: ['darwin']
     }
-  ],
-  plugins: [
-    {
-      name: '@electron-forge/plugin-auto-unpack-natives',
-      config: {}
-    }
   ]
 }
