@@ -1,5 +1,6 @@
 :root {
   --window-padding: 20px;
+  color-scheme: light dark;
 }
 
 * {
@@ -18,11 +19,19 @@ body {
 
 #editor {
   bottom: 0;
-  color: #666;
+  color: CanvasText;
   cursor: text;
   font-size: 14px;
   left: 0;
   line-height: 1.5;
+  /* Fade text out at the edges, since there's no solid background to fade to */
+  mask-image: linear-gradient(
+    to bottom,
+    transparent 0,
+    black var(--window-padding),
+    black calc(100% - var(--window-padding)),
+    transparent 100%
+  );
   outline: none;
   overflow: auto;
   padding: var(--window-padding);
@@ -34,11 +43,6 @@ body {
 }
 
 #bottom {
-  background-image: linear-gradient(
-    to bottom,
-    rgba(255, 255, 255, 0) 0%,
-    rgba(255, 255, 255, 1) 100%
-  );
   bottom: 0;
   height: var(--window-padding);
   left: 0;
@@ -55,11 +59,6 @@ body {
 }
 
 #top {
-  background-image: linear-gradient(
-    to top,
-    rgba(255, 255, 255, 0) 0%,
-    rgba(255, 255, 255, 1) 100%
-  );
   height: var(--window-padding);
   left: 0;
   right: var(--window-padding);

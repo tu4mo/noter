@@ -20,13 +20,15 @@ const toggleNoteWindow = () => {
 const createNoteWindow = () => {
   noteWindow = new BrowserWindow({
     alwaysOnTop: true,
-    backgroundColor: '#eee',
     frame: false,
     height: 300,
     minimizable: false,
     minWidth: 200,
     maximizable: false,
     show: false,
+    vibrancy: 'popover',
+    // Keep the glass effect when the window loses focus
+    visualEffectState: 'active',
     webPreferences: {
       scrollBounce: true
     },
